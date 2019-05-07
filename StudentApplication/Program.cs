@@ -64,7 +64,7 @@ namespace StudentApplication
 
             Console.WriteLine("Please enter the student's loan amount");
 
-            loanAmount = Convert.ToDecimal(Console.ReadLine());
+            loanAmount = Decimal.Parse(Console.ReadLine(),NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture);
 
             Console.WriteLine("Please enter the student's gender ('f' = female, 'm' = male)");
 
